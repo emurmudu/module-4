@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h1>Form Example</h1>
+                <p>Fill out the form below to submit your information.</p>
+            </header>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <fieldset>
+                    <legend>Food Items</legend>
+                    <input type="radio" id="pizza" name="food" value="pizza"><br>
+                    <label for="pizza">Pizza</label><br>
+                    <input type="radio" id="burger" name="food" value="burger"><br>
+                    <label for="burger">Burger</label><br>
+                    <input type="radio" id="pasta" name="food" value="pasta"><br>
+                    <label for="pasta">Pasta</label><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Sales Managers list</legend>
+                    <input type="checkbox" id="manager1" name="managers" value="manager1"><br>
+                    <label for="manager1">Manager 1</label><br>
+                    <input type="checkbox" id="manager2" name="managers" value="manager2"><br>
+                    <label for="manager2">Manager 2</label><br>
+                    <input type="checkbox" id="manager3" name="managers" value="manager3"><br>
+                    <label for="manager3">Manager 3</label><br>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+            
+                <input type="reset" value="Clear">
+            </form>
+        </article>
+    </main>
+</body>
+</html>
